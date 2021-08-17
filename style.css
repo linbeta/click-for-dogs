@@ -2,11 +2,12 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    margin: auto 0px;
+    margin: 0;
     text-align: center;
     min-width: 480px;
     background-color: #2b2d42;
     color: #f4f1de;
+    min-height: calc(100vh - 25px);
 }
 
 h2 {
@@ -17,7 +18,7 @@ button {
     background-color:#646899;
     color: white;
     font-size: 1.2rem;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
     padding: 15px 30px;
     border-radius: 5px;
     border: solid 1px yellow;
@@ -46,7 +47,7 @@ button:active {
 .imgContainer {
     background-color: rgb(248, 245, 234);
     width: 340px;
-    height: 400px;
+    height: 340px;
     border-radius: 3px;
     display: inline-block;
     justify-content: flex-start;
@@ -55,9 +56,9 @@ button:active {
 }
 
 img {
-    max-width: 280px;
+    max-width: 300px;
     max-height: 300px;
-    padding: 30px;
+    padding: 20px;
     vertical-align: top;
 }
 
@@ -70,6 +71,7 @@ footer {
     position: fixed;
     background-color: #4c4f74;
     bottom: 0;
+    /* margin-bottom: 0; */
     width: 100%;
 }
 
@@ -82,4 +84,54 @@ footer a {
 footer a:hover {
     color: yellow;
     transition: 1s;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        min-width: 375px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #dogImages {
+        margin: auto;
+        padding: auto;
+    }
+    
+    .imgContainer {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 300px;
+        height: 320px;
+        display: inline-block;
+        justify-content: center;
+    }
+
+    img {
+        max-width: 260px;
+        max-height: 280px;
+        padding: 20px;
+        vertical-align: super;
+    }
+
+    video {
+        max-width: 300px;
+        max-height: 280px;
+        padding: 20px;
+    }
+
+    button {
+        margin-bottom: 120px;
+    }
+
+    footer {
+        max-height: 80px;
+    }
 }
